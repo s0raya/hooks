@@ -14,7 +14,7 @@ const useFetchCharacters = (url) => {
                 const data = await response.json();
                 setNameCharacter(data.name);
                 if(url.includes('pokeapi')) {setImgCharacter(data.sprites.front_default)}
-                else {setImgCharacter(data.image)};
+                else {setImgCharacter(data.image)}
             } catch (error) {
                 setError(error.message);
             }
